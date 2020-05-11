@@ -1,4 +1,4 @@
-# opensource-networking-technologies
+# Open Source Networking Technologies
 > Introduction to Open Source Networking Technologies
 > https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS165x+1T2020
 
