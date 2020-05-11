@@ -18,3 +18,8 @@
             Explain the functions and use cases of each group of software defined networking technologies.
             Understand how these open source networking technologies communicate with each other.
 
+
+> Chapter 3. Disaggregated Hardware
+
+            Discuss about the hardware of disaggregated and open networking Ethernet switches and wireless access points.
+            Review the Open Compute Project and the Telecom Infra Project.
