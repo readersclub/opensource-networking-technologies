@@ -8,7 +8,8 @@
 - Discuss modern networking components, and how they will shape and integrate with the cloud.
 
 
-A Network Device
+Network Device
+
 ![image](https://user-images.githubusercontent.com/414141/81547979-4f218700-939c-11ea-9a98-11b6d4c93fb8.png)
 
 ![image](https://user-images.githubusercontent.com/414141/81547860-27caba00-939c-11ea-953c-9e964ddcfbba.png)
@@ -41,4 +42,5 @@ Along with the evolution of SDN and open networking, we started seeing bare meta
 - Reviewed the virtualization revolution on servers and storage. 
 - Discussed the driving factors that are pushing the networking industry to evolve. 
 
-* Modern networking and SDN provides an option to enhance the functionalities of the network, making it more change-friendly and integrated with cloud and virtualization platforms.*
+
+*Modern networking and SDN provides an option to enhance the functionalities of the network, making it more change-friendly and integrated with cloud and virtualization platforms.*
