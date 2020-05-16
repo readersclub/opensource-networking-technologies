@@ -84,27 +84,32 @@ As a simple example, imagine that you are creating a new tenant (project) in Ope
 OpenStack only requests the network controller (in this case OpenDaylight) to create a virtual network. It is the network controller’s job to translate this request into networking tasks, and find out which network devices (virtual or physical) are in the transit path between the five virtual machines. After it finds the relevant network devices, it will start programming their forwarding tables using the southbound protocols (such as OpenFlow, SNMP, NETCONF or CLI).
 
 
-**Orchestration, Management, Policy Layer** is where most __NFV (Network Function Virtualization)__  agement platforms are operating. Orchestration tools such as Open Source MANO, Open Security Controller, Akraino Edge Stack, ONAP, and Apache ARIA TOSCA are automation platforms that can create virtual network functions and infrastructure.
+**Orchestration, Management, Policy Layer** is where most _NFV (Network Function Virtualization)_  management platforms are operating. Orchestration tools such as Open Source MANO, Open Security Controller, Akraino Edge Stack, ONAP, and Apache ARIA TOSCA are automation platforms that can create virtual network functions and infrastructure.
 
-Orchestration Platforms Communicate with Network Controller and Cloud Management Layers
 ![image](https://user-images.githubusercontent.com/414141/81555108-a2e59d80-93a7-11ea-9803-6374fdbc952d.png)
 
-Such orchestration platforms are mainly used for automation and batch creation of a service.
+Orchestration platforms communicate with network controller and cloud management layers. Such orchestration platforms are mainly used for automation and batch creation of a service.
 
 For example, the Open Security Controller, which is a software-defined security platform, can enforce security in a network. It will communicate with virtualization management platforms to create virtual firewalls or virtual routers, and ask cloud virtualization platforms to create the required virtual machines for these new virtual firewalls (aka virtual network functions, or VNFs).
 
 The Open Security Controller also communicates with the network controller to create service insertion. For example, it can tell OpenDaylight to create a policy to ensure that all traffic to a database server is always sent to a virtual IDS (Intrusion Detection System) before hitting the database server.
 
 
-**Network Data Analytics** utilizes new technologies and tools such as Big Data, machine learning, and AI to provide knowledge about the network. Such projects and tools are different from the traditional monitoring and data gathering tools that most organizations use on a day-to-day basis.
+**Network Data Analytics** utilizes new technologies and tools such as Big Data, machine learning, and AI to provide knowledge about the network. Such projects and tools are different from the traditional monitoring and data gathering tools that most organizations use on a day-to-day basis. Three projects form The Linux Foundation:
 
-3 projects form The Linux Foundation:
+- SNAS (formerly OpenBMP, stands for Streaming Network Analytics System) is a framework to collect, track and access tens of millions of routing objects (routers, peers, prefixes) in real time. OpenBMP was created to analyze BGP (Border Gateway Protocol) and implemented IETF BMP (BGP Monitoring Protocol). OpenBMP converted to SNAS to provide more functions and use cases for a networking analytics platform.
 
-            SNAS (formerly OpenBMP, stands for Streaming Network Analytics System) is a framework to collect, track and access tens of millions of routing objects (routers, peers, prefixes) in real time. OpenBMP was created to analyze BGP (Border Gateway Protocol) and implemented IETF BMP (BGP Monitoring Protocol). OpenBMP converted to SNAS to provide more functions and use cases for a networking analytics platform.
+- PNDA (Platform for Network Data Analytics) is a Big Data analytics tool with multiple networking use cases and integrations with network controllers such as OpenDaylight or log management platforms such as Logstash and SNAS.
 
-            PNDA (Platform for Network Data Analytics) is a Big Data analytics tool with multiple networking use cases and integrations with network controllers such as OpenDaylight or log management platforms such as Logstash and SNAS.
+- Acumos AI is The Linux Foundation’s artificial intelligence platform, with multiple use cases. It’s a modular platform that can access data from different sources. Developers can build AI applications on top of Acumos to analyze the data, find patterns and predict facts. Acumos has an open marketplace where developers upload their AI applications. Acumos gets integrated with ONAP (Open Networking Automation Platform) and OpenDaylight as data sources, allowing developers to create AI networking applications.
 
-            Acumos AI is The Linux Foundation’s artificial intelligence platform, with multiple use cases. It’s a modular platform that can access data from different sources. Developers can build AI applications on top of Acumos to analyze the data, find patterns and predict facts. Acumos has an open marketplace where developers upload their AI applications. Acumos gets integrated with ONAP (Open Networking Automation Platform) and OpenDaylight as data sources, allowing developers to create AI networking applications.
-
-The Linux Foundation Network Analytics Projects
+The linux foundation network analytics projects
 ![image](https://user-images.githubusercontent.com/414141/81555502-69f9f880-93a8-11ea-9ffb-f4a115b3c85a.png)
+
+
+> Summary
+- Covered the open source networking project categories at a high level.
+- Gained basic an understanding of their functions.
+
+
+*Open networking technologies is very broad as it can be implemented from hardware to how applications communicates.*
