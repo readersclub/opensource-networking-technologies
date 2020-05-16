@@ -9,8 +9,9 @@
 - Understand how these open source networking technologies communicate with each other.
 
 
-The networking landscape in the software defined networking (SDN) and open source networking projects and products in different groups or layer.
 ![image](https://user-images.githubusercontent.com/414141/81550753-6793a080-93a0-11ea-9242-7c346266544d.png)
+The networking landscape in the software defined networking (SDN) and open source networking projects and products in different groups or layer.
+
 
 The hierarchical layers in the landscape:
 - Disaggregated Hardware
@@ -23,10 +24,12 @@ The hierarchical layers in the landscape:
 - Network Data Analytics
 - Application Layer
 
-*Disaggregated Hardware* basically means to be enable to to load or install your own software or operating system in a specific router or a switch that allows you. The main requirement of Disaggregated and Open Hardware is to have its software separated from the hardware. The most simple form of a disaggregated networking hardware is a standard PC or a server with multiple network adapter cards.
+
+**Disaggregated Hardware** basically means to be enable to to load or install your own software or operating system in a specific router or a switch that allows you. The main requirement of Disaggregated and Open Hardware is to have its software separated from the hardware. The most simple form of a disaggregated networking hardware is a standard PC or a server with multiple network adapter cards.
 
 Disaggregated Network Device inside an Open Hardware
 ![image](https://user-images.githubusercontent.com/414141/81551100-fbfe0300-93a0-11ea-80e0-6d9ef38b1fc3.png)
+
 
 > Differences between a network device that runs Linux and a purpose-built network device
 
@@ -44,13 +47,14 @@ Hardware Abstraction in an Open Network Device
 ![image](https://user-images.githubusercontent.com/414141/81552369-1a64fe00-93a3-11ea-8d06-e29de2e28bc7.png)
 
 
-*etworkoperating system** is an operating system that runs on the management plane of a network device. This operating system is designed to drive the packet processor hardware chipset, such as a switch silicon, and perform the tasks required for forwarding, routing, and switching. It hosts networking applications that can communicate directly with networking device ASICs and packet processor chipsets. It may also have networking software modules such as Spanning Tree, OSPF (Open Shortest Path First), BGP (Border Gateway Protocol), SNMP (Simple Network Management Protocol), SSH server, etc. Examples: ONL (Open Network Linux), Facebook’s FBOSS (Facebook Open Switching System), Microsoft’s SONIC (Software for Open Network in the Cloud) and OpenSwitch from The Linux Foundation.
+**Network Operating System (NOS)** is an operating system that runs on the management plane of a network device. This operating system is designed to drive the packet processor hardware chipset, such as a switch silicon, and perform the tasks required for forwarding, routing, and switching. It hosts networking applications that can communicate directly with networking device ASICs and packet processor chipsets. 
+It may also have networking software modules such as Spanning Tree, OSPF (Open Shortest Path First), BGP (Border Gateway Protocol), SNMP (Simple Network Management Protocol), SSH server, etc. Examples: ONL (Open Network Linux), Facebook’s FBOSS (Facebook Open Switching System), Microsoft’s SONIC (Software for Open Network in the Cloud) and OpenSwitch from The Linux Foundation.
 
 Disaggregated Network Hardware
 ![image](https://user-images.githubusercontent.com/414141/81552532-6021c680-93a3-11ea-9373-6e07bd03750c.png)
 
 
-The Network Control ( or SDN controllers layer ) is the brain that can manage multiple network operating systems via agents and protocols can has all the information about the network and the devices in that network. It consists of multiple physical or virtual switches and routers.
+**The Network Control ( or SDN controllers layer )** is the brain that can manage multiple network operating systems via agents and protocols and has all the information about the network including the devices in the network. It consists of multiple physical or virtual switches and routers.
 
 The Network Controller Can Manage Virtual or Hardware Switches/Network Devices
 ![image](https://user-images.githubusercontent.com/414141/81553475-d5da6200-93a4-11ea-9c8f-9849228d4471.png)
@@ -59,12 +63,12 @@ An SDN Network Can Scale Out
 ![image](https://user-images.githubusercontent.com/414141/81553721-4da88c80-93a5-11ea-84b9-e014cd49f3da.png)
 
 
-Network virtualization (or an overlay network )  is about creating virtual networks on top of physical networks. It is mainly based on encapsulation technologies. The endpoints send data packets to each other with addresses that may not be routable in an underlying network. The overlay hosts encapsulate the original data packets into other packets (such as GRE or VXLAN) and send the packets to a physical underlay network towards the destination host. The destination host decapsulates the packet and delivers it to the endpoint. It can be created using virtual switches or platforms such as OpenStack Neutron, OVS (Open vSwitch), VMware NSX, or a hardware VTEP (VXLAN Tunnel Endpoint) gateway.
+**Network Virtualization** (or an overlay network ) is about creating virtual networks on top of physical networks. It is mainly based on encapsulation technologies. The endpoints send data packets to each other with addresses that may not be routable in an underlying network. The overlay hosts encapsulate the original data packets into other packets (such as GRE or VXLAN) and send the packets to a physical underlay network towards the destination host. The destination host decapsulates the packet and delivers it to the endpoint. It can be created using virtual switches or platforms such as OpenStack Neutron, OVS (Open vSwitch), VMware NSX, or a hardware VTEP (VXLAN Tunnel Endpoint) gateway.
 
-Overlay Networks Are Virtual Networks on Top of Physical Networks, Built Using Encapsulation and Tunnels
+Overlay networks are virtual networks on top of physical networks, built using encapsulation and tunnels
 ![image](https://user-images.githubusercontent.com/414141/81553885-919b9180-93a5-11ea-9f27-a8ce46b7de63.png)
 
-Packet Transfer Steps in an Overlay Network
+Packet transfer steps in an overlay network
 ![image](https://user-images.githubusercontent.com/414141/81554015-c60f4d80-93a5-11ea-81ad-0abeceb379b9.png)
 
 
@@ -80,7 +84,7 @@ As a simple example, imagine that you are creating a new tenant (project) in Ope
 OpenStack only requests the network controller (in this case OpenDaylight) to create a virtual network. It is the network controller’s job to translate this request into networking tasks, and find out which network devices (virtual or physical) are in the transit path between the five virtual machines. After it finds the relevant network devices, it will start programming their forwarding tables using the southbound protocols (such as OpenFlow, SNMP, NETCONF or CLI).
 
 
-**Orchestration, Management, Policy Layer** is where most NFV (Network Function Virtualization) management platforms are operating. Orchestration tools such as Open Source MANO, Open Security Controller, Akraino Edge Stack, ONAP, and Apache ARIA TOSCA are automation platforms that can create virtual network functions and infrastructure.
+**Orchestration, Management, Policy Layer** is where most __NFV (Network Function Virtualization)__  agement platforms are operating. Orchestration tools such as Open Source MANO, Open Security Controller, Akraino Edge Stack, ONAP, and Apache ARIA TOSCA are automation platforms that can create virtual network functions and infrastructure.
 
 Orchestration Platforms Communicate with Network Controller and Cloud Management Layers
 ![image](https://user-images.githubusercontent.com/414141/81555108-a2e59d80-93a7-11ea-9803-6374fdbc952d.png)
