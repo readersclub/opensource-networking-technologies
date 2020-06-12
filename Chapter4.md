@@ -39,7 +39,9 @@ The new switch chipset is coming with more flexible DataPlanes (switch chipset);
 DPDK (Data Plane Development Kit) is a set of libraries and drivers for fast packet processing on a system, mainly using standard NIC (Network Interface Card) cards. DPDK is a tool that provides a framework for robust processing for building data plane applications. It is designed to run on any processors, such as x86, ARM, or IBM Power. It mainly runs in a Linux user space. DPDK is well-known on x86 computing devices (servers, computers, etc.) running Linux and using a DPDK-compliant NIC card.
 
 DPDK - Quick Summary
+-- |
 Name | Data Plane Development Kit
+-- | -- 
 By | The Linux Foundation
 Where it runs | Linux, any x86, VM, or embedded system
 What it does | Packet processing, routing, switching, encapsulation on the NIC card
@@ -77,8 +79,9 @@ The NIC cards that support DPDK are limited. However, the list is always changin
 FD.io is a collaborative open source project hosted by The Linux Foundation. FD.io aims to establish a high performance Data Plane in the user space.
 
 FD.io - Quick Summary
-
+-- |
 Name | The Fast Data Project (FD.io)
+-- | -- 
 By | The Linux Foundation
 Where it runs | Linux, any x86, VM, or embedded system (Runs in the User Space)
 What it does | Packet processing, routing, switching, NAT
@@ -144,6 +147,7 @@ The Open Networking Ecosystem
 IO Visor - Quick Summary
 
 Name | IO Visor Project
+-- | --
 By | The Linux Foundation
 Where it runs | Linux, any x86, VM, or embedded system (in-kernel)
 What it does | Packet processing, routing, switching, NAT
@@ -189,6 +193,7 @@ According to the Open vSwitch website,
 OVS - Quick Summary
 
 Name | Open Virtual Switch (OVS)
+-- | --
 By | The Linux Foundation
 Where it runs | Linux
 What it does | Virtual switch/router with physical and virtual interfaces
@@ -238,8 +243,10 @@ OpenDataPlane is an open source project driven by the Linaro group. ODP is simil
 
 "The OpenDataPlane project has been established to produce an open-source, cross-platform set of application programming interfaces (APIs) for the networking data plane".
 
-ODP - Quick Summary | 
+ODP - Quick Summary
+-- |
 Name | OpenDataPlane
+-- | --
 By | The independent open source community is mainly driven by the Linaro Network Group
 Where it runs | An abstraction layer, runs on x86, ARM and other embedded SoCs
 What it does | Robust network programming for embedded systems
@@ -284,8 +291,9 @@ There are currently two specifications defined and developed by OCI:
   Image Specification (image-spec).
 
 
-OCI - Quick Summary | 
+OCI - Quick Summary
 Name | Open Container Initiative
+-- | --
 By | The Linux Foundation
 Where it runs | Linux
 What it does | Standardizes the packaging and running of containers
@@ -313,8 +321,8 @@ SmartNIC is a new term in the industry, referring to network cards that are prog
 ![image](https://user-images.githubusercontent.com/414141/84024519-c0f3ed00-a9a9-11ea-8169-22794f6277d7.png)
 
 SmartNICs - Quick Summary
---
 Name | Smart Network Interface Cards (SmartNICs)
+-- | --
 By | Multiple manufacturers, such as Netronome, Napatech, Mellanox Technologies, etc.
 Where it runs | It's a physical PCIe card
 What it does | Offloads packet processing from the host, processes packets at high speed in NICs
@@ -346,8 +354,9 @@ FPGAs and Xilinx SDNet
 Xilinx, Inc. is a chipset maker well-known for their Field Programmable Gate Array (FPGA) products. FPGA is a programmable chipset which allows you to build your functions that run in a FPGA chip at a very high speed. FPGAs are expensive, but very flexible.
 
 SDNet - Quick Summary
---
+-- |
 Name | SDNet
+-- | --
 By | Xilinx Inc.
 Where it runs | On Xilinx FPGA
 What it does | SDNet  is a library used to build networking applications in Xilinx FPGA to  implement fast packet processing in FPGA at different speeds, such as  1Gbps, 10Gbps, 100Gbps, etc.
