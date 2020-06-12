@@ -39,7 +39,6 @@ The new switch chipset is coming with more flexible DataPlanes (switch chipset);
 DPDK (Data Plane Development Kit) is a set of libraries and drivers for fast packet processing on a system, mainly using standard NIC (Network Interface Card) cards. DPDK is a tool that provides a framework for robust processing for building data plane applications. It is designed to run on any processors, such as x86, ARM, or IBM Power. It mainly runs in a Linux user space. DPDK is well-known on x86 computing devices (servers, computers, etc.) running Linux and using a DPDK-compliant NIC card.
 
 DPDK - Quick Summary
--- |
 Name | Data Plane Development Kit
 -- | -- 
 By | The Linux Foundation
@@ -79,7 +78,6 @@ The NIC cards that support DPDK are limited. However, the list is always changin
 FD.io is a collaborative open source project hosted by The Linux Foundation. FD.io aims to establish a high performance Data Plane in the user space.
 
 FD.io - Quick Summary
--- |
 Name | The Fast Data Project (FD.io)
 -- | -- 
 By | The Linux Foundation
@@ -145,7 +143,6 @@ The Open Networking Ecosystem
 ![image](https://user-images.githubusercontent.com/414141/84017719-c8fa5f80-a99e-11ea-8df6-5ed48e4d4abd.png)
 
 IO Visor - Quick Summary
-
 Name | IO Visor Project
 -- | --
 By | The Linux Foundation
@@ -191,7 +188,6 @@ According to the Open vSwitch website,
 "Open vSwitch is a production quality, multilayer virtual switch licensed under the open source Apache 2.0 license. It is designed to enable massive network automation through programmatic extension, while still supporting standard management interfaces and protocols (e.g. NetFlow, sFlow, IPFIX, RSPAN, CLI, LACP, 802.1ag). In addition, it is designed to support distribution across multiple physical servers similar to VMware's vNetwork distributed vswitch or Cisco's Nexus 1000V. See full feature list here".
 
 OVS - Quick Summary
-
 Name | Open Virtual Switch (OVS)
 -- | --
 By | The Linux Foundation
@@ -244,7 +240,6 @@ OpenDataPlane is an open source project driven by the Linaro group. ODP is simil
 "The OpenDataPlane project has been established to produce an open-source, cross-platform set of application programming interfaces (APIs) for the networking data plane".
 
 ODP - Quick Summary
--- |
 Name | OpenDataPlane
 -- | --
 By | The independent open source community is mainly driven by the Linaro Network Group
@@ -354,7 +349,6 @@ FPGAs and Xilinx SDNet
 Xilinx, Inc. is a chipset maker well-known for their Field Programmable Gate Array (FPGA) products. FPGA is a programmable chipset which allows you to build your functions that run in a FPGA chip at a very high speed. FPGAs are expensive, but very flexible.
 
 SDNet - Quick Summary
--- |
 Name | SDNet
 -- | --
 By | Xilinx Inc.
